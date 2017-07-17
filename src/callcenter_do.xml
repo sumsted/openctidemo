@@ -1,0 +1,16 @@
+<callCenter>
+    <section sortOrder="0" name="reqGeneralInfo" label="General Information">
+        <item sortOrder="0" name="reqInternalName" label="InternalName">OpenCTIDemo</item>
+        <item sortOrder="1" name="reqDisplayName" label="DisplayName">Open CTI Demo</item>
+        <item sortOrder="2" name="reqAdapterUrl" label="CTIAdapterURL">https://<your hosted domain>/softphone</item>
+        <item sortOrder="3" name="reqUseApi" label="UseCTI API">true</item>
+        <item sortOrder="4" name="reqSoftphoneHeight" label="SoftphoneHeight">300</item>
+        <item sortOrder="5" name="reqSoftphoneWidth" label="SoftphoneWidth">300</item>
+        <item sortOrder="6" name="reqSalesforceCompatabilityMode" label=" SalesforceCompatibilityMode">Classic</item>
+    </section>
+    <section sortOrder="1" name="reqDialingOptions" label="DialingOptions">
+        <item sortOrder="0" name="reqOutsidePrefix" label="OutsidePrefix">9</item>
+        <item sortOrder="1" name="reqLongDistPrefix" label="LongDistancePrefix">1</item>
+        <item sortOrder="2" name="reqInternationalPrefix" label="InternationalPrefix">01</item>
+    </section>
+</callCenter>
