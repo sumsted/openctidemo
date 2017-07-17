@@ -1,4 +1,5 @@
-# OpenCTI Demo Salesforce Console Adapter
+OpenCTI Demo Salesforce Console Adapter
+===
 
 This is a softphone adapter for Salesforce Console apps.
  
