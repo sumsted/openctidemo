@@ -20,7 +20,7 @@ Steps to use:
     
         <item sortOrder="2" name="reqAdapterUrl" label="CTIAdapterURL">https://<your hosted domain>/softphone</item>
     
-3. Go into Salesforce setup/developer console and create a new class called OpenCtiSearchContact.cls. Replace the editor contents with the contents from the file OpenCTISearchContact.cls.
+3. Go into Salesforce setup/developer console and create a new class called OpenCtiSearchContact. Replace the editor contents with the contents from the file OpenCTISearchContact.cls.
 
 4. Then complete the setup configuration in salesforce for your call center.
  
