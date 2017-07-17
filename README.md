@@ -6,11 +6,13 @@ This is a softphone adapter for Salesforce Console apps.
 It is based on the code found in the [Salesforce Open CTI Developer Guide](https://resources.docs.salesforce.com/sfdc/pdf/api_cti.pdf) and some hints I found in the [Salesforce 
 Lightning console demo adapter](https://github.com/developerforce/open-cti-demo-adapter).
 
-This adapter will allow you to simulate calls to your Salesforce Console app. You can seed and use up to three numbers. Changes to numbers are stored locally and available the next time you log in. 
+This adapter will allow you to simulate calls to your Salesforce Console app. You can seed and use up to three numbers. Changes to numbers are stored locally and available the next time you log in. Look in js/softphone.js for the interesting cti calls.
+ 
 
 ![OpenCTI Demo Adapter](https://github.com/sumsted/openctidemo/raw/master/img/OpenCTI_Demo.png)
 
 Steps to use:
+---
 
 1. Update the interaction.js import in softphone.html to indicate your org's domain.
     
