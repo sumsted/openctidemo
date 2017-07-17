@@ -21,7 +21,7 @@ var app = {
     },
 
     simulateCall: function (e) {
-        var cookieName = 'arc-cti-' + $(e.target).parent().prev().attr('id');
+        var cookieName = 'open-cti-' + $(e.target).parent().prev().attr('id');
         var phone = $(e.target).parent().prev().val();
         var color = $(e.target).css("color");
         var inCall = color === "rgb(0, 153, 0)" ? true : false;
@@ -43,8 +43,8 @@ var app = {
     },
 
     apexSearchContact: function (val) {
-        app.logit('runApex ArcCtiSearchContact(' + val + ')');
-        sforce.interaction.runApex('ArcCtiSearchContact', 'getContacts', 'name=' + val, app.apexSearchContactCallback);
+        app.logit('runApex OpenCtiSearchContact(' + val + ')');
+        sforce.interaction.runApex('OpenCtiSearchContact', 'getContacts', 'name=' + val, app.apexSearchContactCallback);
     },
 
     apexSearchContactCallback: function (response) {
@@ -89,7 +89,7 @@ var app = {
     },
 
     getCookie: function (id) {
-        var cookieName = 'arc-cti-' + id;
+        var cookieName = 'open-cti-' + id;
         var cookieValue = Cookies.get(cookieName);
         if(cookieValue){
             if(cookieValue !== ""){
