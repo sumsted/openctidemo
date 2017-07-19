@@ -1,4 +1,8 @@
 var app = {
+    inCallColor : "rgb(0, 180, 0)",
+
+    outOfCallColor : "rgb(150, 150, 150)",
+
     start: function () {
         app.logit('Initializing adapter')
 
@@ -21,17 +25,19 @@ var app = {
     },
 
     simulateCall: function (e) {
-        var cookieName = 'open-cti-' + $(e.target).parent().prev().attr('id');
-        var phone = $(e.target).parent().prev().val();
-        var color = $(e.target).css("color");
-        var inCall = color === "rgb(0, 153, 0)" ? true : false;
+        var button =  $(this);
+        var icon = $(this).children('span');
+        var cookieName = 'open-cti-' + $(button).parent().prev().attr('id');
+        var phone = $(button).parent().prev().val();
+        var color = $(icon).css("color");
+        var inCall = color === app.inCallColor ? true : false;
         if (inCall) {
             app.logit("Hanging up phone");
-            $(e.target).css({"color": "rgb(153, 153, 153)"});
+            $(icon).css({"color": app.outOfCallColor});
         } else {
             if (phone !== '') {
                 Cookies.set(cookieName, phone);
-                $(e.target).css({"color": "rgb(0, 153, 0)"});
+                $(icon).css({"color": app.inCallColor});
                 app.logit("Simulating inbound call");
                 app.logit("ANI: " + phone);
                 app.logit("Searching for contact by phone");
